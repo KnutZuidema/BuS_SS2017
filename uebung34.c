@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 float roundRobin(int jobs[], int length, int timeQuantum){
-	int jobsCopy[length];
+	int jobsCopy[length]; //Kopie des uebergebenen Arrays
 	int waitTimes[length];
 	float avgTime;
 	int remainingTime = 1;
 	float totalProcessingTime = 0;
 	float totalWaitTime = 0;
-	int i, n, x;
+	int i, n, x; 
 	
 	for(i = 0; i < length; i++){
 		jobsCopy[i] = jobs[i];
